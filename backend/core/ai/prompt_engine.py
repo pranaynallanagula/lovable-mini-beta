@@ -1,4 +1,4 @@
-# core/ai/prompt_engine.py
+
 from typing import Dict, List, Any, Optional
 from models.project import ProjectTemplate
 
@@ -9,23 +9,39 @@ class PromptEngine:
     
     def _load_templates(self) -> Dict[str, ProjectTemplate]:
         return {
-            "portfolio": ProjectTemplate(
-                id="portfolio",
-                name="Developer Portfolio",
-                description="Professional portfolio website",
-                features=["Hero section", "About", "Projects", "Contact", "Skills"],
-                stack="React + TypeScript + Tailwind",
-                components=["Navbar", "Hero", "About", "ProjectsGrid", "Skills", "Contact", "Footer"]
-            ),
-            "dashboard": ProjectTemplate(
-                id="dashboard",
-                name="Admin Dashboard", 
-                description="Full-featured admin dashboard",
-                features=["Authentication", "Charts", "Tables", "Settings"],
-                stack="React + TypeScript + Tailwind + Recharts",
-                components=["Sidebar", "Header", "Dashboard", "Analytics", "UserTable", "Settings"]
-            )
-        }
+        "portfolio": ProjectTemplate(
+            id="portfolio",
+            name="Developer Portfolio",
+            description="Modern software developer portfolio with projects showcase",
+            features=["Hero with typing animation", "Projects grid", "Skills showcase", "Contact form"],
+            stack="React + TypeScript + Tailwind",
+            components=["Navbar", "Hero", "About", "ProjectsGrid", "Skills", "Contact", "Footer"]
+        ),
+        "dashboard": ProjectTemplate(
+            id="dashboard", 
+            name="Admin Dashboard",
+            description="Professional admin dashboard with analytics and data management",
+            features=["Sidebar navigation", "Analytics charts", "Data tables", "User management"],
+            stack="React + TypeScript + Tailwind + Recharts",
+            components=["Sidebar", "Header", "Dashboard", "Analytics", "UserTable", "Settings"]
+        ),
+        "landing": ProjectTemplate(
+            id="landing",
+            name="SaaS Landing Page",
+            description="High-converting landing page for SaaS products",
+            features=["Hero section", "Features showcase", "Pricing table", "Testimonials"],
+            stack="React + TypeScript + Tailwind",
+            components=["Navbar", "Hero", "Features", "Pricing", "Testimonials", "FAQ", "Footer"]
+        ),
+        "business": ProjectTemplate(
+            id="business",
+            name="Business Website", 
+            description="Professional corporate website for consulting companies",
+            features=["Company overview", "Services", "Team profiles", "Client testimonials"],
+            stack="React + TypeScript + Tailwind",
+            components=["Navbar", "Hero", "Services", "Team", "Testimonials", "Stats", "Contact", "Footer"]
+        )
+    }
     
     def _load_component_prompts(self) -> Dict[str, str]:
         return {

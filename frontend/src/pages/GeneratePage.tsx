@@ -1,4 +1,3 @@
-// frontend/src/pages/GeneratePage.tsx
 import React, { useState } from "react";
 import axios from "axios";
 
