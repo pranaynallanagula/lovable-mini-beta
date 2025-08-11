@@ -21,7 +21,7 @@ function App() {
                 <h1 className="text-2xl font-bold text-white">
                   Lovable-mini
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 ml-2">
-                    (Enhanced)
+                    (Beta)
                   </span>
                 </h1>
                 <p className="text-gray-400 text-sm">
@@ -53,11 +53,7 @@ function App() {
               </div>
 
               <div className="flex items-center space-x-3">
-                <div className="flex items-center space-x-2 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span>Live</span>
-                </div>
-
+                {" "}
                 <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
                   Sign In
                 </button>
@@ -116,7 +112,7 @@ function App() {
                   <span className="text-white font-bold">✨</span>
                 </div>
                 <span className="text-xl font-bold text-white">
-                  Lovable-mini
+                  Lovable-mini (Beta)
                 </span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
@@ -215,10 +211,10 @@ function App() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Lovable-mini. Built with ❤️ and AI.
+              © 2025 Lovable-mini (Beta). Built with ❤️ and AI.
             </p>
             <p className="text-gray-500 text-sm mt-4 md:mt-0">
-              Enhanced version with modern design
+              Beta version with modern design
             </p>
           </div>
         </div>
