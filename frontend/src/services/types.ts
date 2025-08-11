@@ -1,4 +1,3 @@
-// frontend/src/services/types.ts
 export interface Plan {
   title?: string;
   description?: string;
