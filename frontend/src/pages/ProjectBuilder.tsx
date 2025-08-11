@@ -270,7 +270,7 @@ export default function ProjectBuilder() {
               AI
             </p>
 
-            {/* Progress Bar */}
+            {/* Progress Bar: you can see this in Project Plan */}
             {progress && (
               <div className="max-w-md mx-auto bg-white/20 backdrop-blur-sm rounded-full p-4">
                 <div className="flex justify-between items-center mb-2">
@@ -298,8 +298,6 @@ export default function ProjectBuilder() {
             )}
           </div>
         </div>
-
-        {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-white/10 to-transparent rounded-full -translate-x-32 -translate-y-32"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-white/5 to-transparent rounded-full translate-x-48 translate-y-48"></div>
       </div>
@@ -405,14 +403,11 @@ export default function ProjectBuilder() {
                         <h3 className="font-bold text-gray-900 mb-2">
                           {template.name}
                         </h3>
-                        <p className="text-sm text-gray-600 mb-4">
-                          {template.description}
-                        </p>
 
                         <div className="space-y-2">
                           <div className="flex flex-wrap gap-1 justify-center">
                             {template.features
-                              .slice(0, 3)
+                              .slice(0, 1)
                               .map((feature, idx) => (
                                 <span
                                   key={idx}

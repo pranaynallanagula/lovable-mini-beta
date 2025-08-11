@@ -1,14 +1,13 @@
-// frontend/src/App.tsx - MODERN ENHANCED VERSION
 import React, { useState } from "react";
 import "./index.css";
 import ProjectBuilder from "./pages/ProjectBuilder";
 
 function App() {
-  const [signedIn, setSignedIn] = useState(true); // we show builder immediately for demo
+  const [signedIn, setSignedIn] = useState(true);
 
   return (
     <div className="app min-h-screen">
-      {/* Modern Header with Gradient */}
+      {/* this is my Nav bar */}
       <header className="relative bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 border-b border-gray-200/20">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10"></div>
         <div className="relative max-w-7xl mx-auto px-6 py-4">
@@ -62,11 +61,10 @@ function App() {
           </div>
         </div>
 
-        {/* Decorative bottom border */}
         <div className="h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
       </header>
 
-      {/* Main Content */}
+      {/* TODO: sign in page for logging */}
       <main className="relative">
         {!signedIn ? (
           <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50">
@@ -96,13 +94,14 @@ function App() {
             </div>
           </div>
         ) : (
+          // here we are showing the main page directly
           <div className="page-transition">
             <ProjectBuilder />
           </div>
         )}
       </main>
 
-      {/* Modern Footer */}
+      {/* this is my Footer */}
       <footer className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 border-t border-gray-200/20 mt-16">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
