@@ -1,4 +1,4 @@
-// frontend/src/pages/ProjectBuilder.tsx - MODERN BEAUTIFUL VERSION WITH FIXES
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -67,7 +67,7 @@ export default function ProjectBuilder() {
   const [previewLoading, setPreviewLoading] = useState(false);
   const [stylePreference, setStylePreference] = useState<string>("modern");
 
-  // Load templates on component mount
+  /
   useEffect(() => {
     loadTemplates();
   }, []);
