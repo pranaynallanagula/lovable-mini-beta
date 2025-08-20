@@ -1,4 +1,4 @@
-# 🚀 Lovable Clone - AI-Powered Web Application Generator
+# 🚀 AI-Powered Web Application Generator
 
 > Transform your ideas into beautiful web applications with the power of AI
 
